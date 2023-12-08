@@ -20,7 +20,26 @@ Jupyter Notebooks, and is compatible with a few different LMSs, including Canvas
 
 The documentation for Otter can be found [here](https://otter-grader.rtfd.io).
 
-## Contributing
+## Install and Contributing (easy going )
+
+run local in your Unix/ubuntu- shell
+'git clone https://github.com/georanius/otter-grader.git'
+'cd otter-grader/'
+'conda activate base'
+'conda env create -f environment.yml' #starting the not from condas environement 'base' takes endless, but
+ !!!Wait!!! or speed up conda, maybe with  'conda install -n base conda-forge::mamba'
+ 'conda activate otter-grader'
+ 'pip install .'
+ 'pip install jupyterlab' 
+ So funny this ecosystem neads also his own jupyterlab , since not notebooks (.ipynb) opened when starting jupyterlab from (base)...
+ 'jupyter-lab &'
+ In jupyterlab take a terminal and 
+ 'cd otter-grader/examples/env-validation'
+ and choose this directory also in the Filebrowser and open env-validation.jpynb
+ 'otter assign env-validation.ipynb solutionsAndExamsNotebooks'
+ 
+ 
+
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
