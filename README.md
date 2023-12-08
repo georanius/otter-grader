@@ -52,7 +52,7 @@ with, and see it emerging in the browser
 
 ```bash 'jupyter-lab &'
 ```
- In jupyterlab take a terminal, click ```File->ew``` (automatic in otter-grader env)  and:
+ In jupyterlab take a terminal, click ```File->New->Terminal``` (automatic in otter-grader env)  and:
  ```bash
  cd otter-grader/examples/env-validation
  ```
