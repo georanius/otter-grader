@@ -22,26 +22,47 @@ The documentation for Otter can be found [here](https://otter-grader.rtfd.io).
 
 ## Install and Contributing (easy going )
 
-run local in your Unix/ubuntu- shell
-'git clone https://github.com/georanius/otter-grader.git'
-'cd otter-grader/'
-'conda activate base'
-'conda env create -f environment.yml' #starting the not from condas environement 'base' takes endless, but
- !!!Wait!!! or speed up conda, maybe with  'conda install -n base conda-forge::mamba'
- 'conda activate otter-grader'
- 'pip install .'
- 'pip install jupyterlab' 
+Run local in your Unix/ubuntu- shell with conda installed:
+
+```bash
+git clone https://github.com/georanius/otter-grader.git
+
+cd otter-grader/
+
+conda activate base
+
+conda env create -f environment.yml
+
+```
+Starting the not from condas environement ```base``` takes endless, but
+ !!!Wait!!! or speed up conda, maybe with  ```conda install -n base conda-forge::mamba```
+
+Then continue with:
+```bash
+ conda activate otter-grader
+ 
+ pip install .
+ 
+ pip install jupyterlab
+ 
+```
  So funny this ecosystem neads also his own jupyterlab , since not notebooks (.ipynb) opened when starting jupyterlab from (base)...
- 'jupyter-lab &'
- In jupyterlab take a terminal and 
- 'cd otter-grader/examples/env-validation'
+And then start your new jupyterlab in otters envirenement in the bagground
+with, and see it emerging in the browser
+
+```bash 'jupyter-lab &'
+```
+ In jupyterlab take a terminal, click ```File->ew``` (automatic in otter-grader env)  and:
+ ```bash
+ cd otter-grader/examples/env-validation
+ ```
  and choose this directory also in the Filebrowser and open env-validation.jpynb
- 'otter assign env-validation.ipynb solutionsAndExamsNotebooks'
+ Here you might assign your first assignement 
+ ```bash
+otter assign env-validation.ipynb solutionsAndExamsNotebooks
+ ```
  
- 
-
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md).
+If you like to run more tests look in the file: [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Changelog
 
